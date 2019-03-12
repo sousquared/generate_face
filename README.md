@@ -10,4 +10,4 @@ You can change how long you want to produce the images just by changing `for i r
 I trained the Generator using [pytorch tutorial's model][1] with Google Colaboratory.  
 
 
-[1]:https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html#sphx-glr-download-beginner-dcgan-faces-tutorial-py
+[1]:https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
