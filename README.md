@@ -3,7 +3,7 @@ in progress...
 
 # generate face images
 The script keeps generating face images based on DCGAN.  
-You can change how long you want to produce the images just by changing `for i range():` part.
+You can change how long the script produces the images just by changing `for i range():` part.
 
 `python generate.py`
 
