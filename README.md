@@ -12,7 +12,7 @@ run the following code:
 
 # GUI
 - `show_image.py`  
-simple GUI that shows an image. The image is loaded as `numpy array`.
+simple GUI that just shows an image. The image is loaded as `numpy array`.
 
 - `show_face.py`  
 A GUI that generates and shows a face image.
