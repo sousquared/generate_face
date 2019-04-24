@@ -11,11 +11,14 @@ run the following code:
 `python generate_face.py`  
 
 # GUI
-`show_image.py`
-
+- `show_image.py`  
 simple GUI that shows an image. The image is loaded as `numpy array`.
 
+- `show_face.py`  
+A GUI that generates and shows a face image.
+
 ## Next
-show an image made by Generator
+- update `show_face.py`  
+make a button to change the face image.
 
 [1]:https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
