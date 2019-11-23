@@ -83,11 +83,6 @@ for i in range(20):
     plt.axis("off")
     plt.title("generated images")
     plt.imshow(np.transpose(vutils.make_grid(fake.detach(), padding=2, normalize=True), (1,2,0)))
-    plt.pause(0.5)
-
-    plt.axis("off")
-    plt.title("generated images")
-    plt.imshow(np.transpose(vutils.make_grid(fake.detach()[i], padding=2, normalize=True), (1,2,0)))
     plt.pause(1)
-    
+
 plt.close()
