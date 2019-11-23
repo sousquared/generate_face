@@ -66,7 +66,6 @@ class Generator(nn.Module):
 
 
 # load and use trained parameters
-# reference: https://qiita.com/sh-tatsuno/items/42fccff90c98103dffc9
 param_path = "./param/netG_inter7914.pth"
 param = torch.load(param_path, map_location='cpu')
 # Create the generator
@@ -86,20 +85,9 @@ for i in range(20):
     plt.imshow(np.transpose(vutils.make_grid(fake.detach(), padding=2, normalize=True), (1,2,0)))
     plt.pause(0.5)
 
-"""
-# Generate batch of latent vectors
-# noise = torch.randn(batch_size, nz, 1, 1, device=device)
-noise = torch.randn(1, nz, 1, 1, device=device)
-# Generate fake image batch with G
-fake = netG(noise)
-
-for i in range(5):
-    # visualization
-    plt.figure(figsize=(8,8))
     plt.axis("off")
     plt.title("generated images")
     plt.imshow(np.transpose(vutils.make_grid(fake.detach()[i], padding=2, normalize=True), (1,2,0)))
     plt.pause(1)
-    # plt.close()
-"""
-
+    
+plt.close()
