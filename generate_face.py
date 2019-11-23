@@ -5,9 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-# Root directory for dataset
-dataroot = "./celeba"
-
 # Batch size during training
 batch_size = 128
 
