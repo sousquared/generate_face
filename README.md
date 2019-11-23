@@ -11,4 +11,11 @@ run the following code:
 `python generate_face.py`  
 
 
+# requirements
+numpy  
+matplotlib  
+torch  
+torchvision  
+
+
 [1]:https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
