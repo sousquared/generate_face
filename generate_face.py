@@ -1,3 +1,6 @@
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
 import torch
 import torch.nn as nn
 import torchvision.utils as vutils
@@ -69,7 +72,7 @@ param = torch.load(param_path, map_location='cpu')
 netG = Generator(ngpu).to(device)
 netG.load_state_dict(param)
 
-for i in range(20):
+for i in range(100):
     # Generate batch of latent vectors
     # noise = torch.randn(batch_size, nz, 1, 1, device=device)
     noise = torch.randn(1, nz, 1, 1, device=device)
@@ -81,5 +84,5 @@ for i in range(20):
     plt.title("generated images")
     plt.imshow(np.transpose(vutils.make_grid(fake.detach(), padding=2, normalize=True), (1,2,0)))
     plt.pause(1)
+    plt.close()
 
-plt.close()
